@@ -1,0 +1,171 @@
+body,
+p {
+	margin: 0;
+	user-select: none;
+}
+/*a {
+	text-decoration: none;
+}*/
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+input {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+.wrap {
+	position: relative;
+}
+.bgImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg1.jpg) no-repeat;
+	background-size: cover;
+}
+.list,
+.changeFile {
+	width: 180px;
+	background: rgba(0,0,0,.4);
+	display: none;
+	position: absolute;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+	z-index: 10000;
+}	
+.changeFile li,
+.list li {
+	margin: 1px;
+	box-sizing: border-box;
+	padding: 10px 0 10px 30px;
+	height: 40px;
+	font: bold 12px/20px "微软雅黑";
+	color: #fff;
+	position: relative;
+}
+body .active {
+	background: rgba(0,0,0,.6);
+}
+.subList {
+	width: 200px;
+	position: absolute;
+	top: -5px;
+	right: -202px;
+	background: rgba(0,0,0,.4);
+	box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}
+.box {
+	position: fixed;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.box .del {
+	box-sizing: border-box;
+	width: 110px;
+	height: 95px;
+	padding: 20px 10px 30px;
+	background: url(../img/timg.png) center 10px no-repeat;
+	background-size: 55px 55px;
+	border-radius: 10px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+}
+#paths {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 96%;
+	height: 30px;
+	font: bold 14px/30px "微软雅黑";
+	color: #000;
+	border: 1px solid rgba(0,0,0,.2);
+	background: rgba(0,0,0,.3);
+	padding-left: 10px;
+}
+#paths a {
+	color: #fff;
+    margin: 0 5px;
+}
+#paths span {
+	color: #fff;
+    margin: 0 5px;
+}
+#crumbs {
+	display: inline-block;
+}
+#crumbs li {
+	display: inline-block;
+}
+.box div {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 110px;
+	height: 95px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 13px 10px 30px;
+	background: url('../img/file.png');
+	z-index: 1;
+}
+.box .file {
+    background-position: 23px 5px;
+}
+.box .txt {
+    background-position: -91px -220px;
+}
+.box .html {
+    background-position:  -889px -905px;
+}
+.box div p {
+	position: absolute;
+	top: 75px;
+	left: 0;
+	width: 110px;
+	height: 20px;
+	font: bold 12px/20px "微软雅黑";
+	color: #fff;
+	text-align: center;
+}
+.box div input {
+	width: 100px;
+	height: 20px;
+	font: bold 12px/20px "微软雅黑";
+	color: #000;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 68px;
+	left: 1px;
+	display: none;
+}
+.box div.hover {
+	background-color: rgba(0, 0, 0, .1);
+	border: 1px solid rgba(255, 255, 255, .5);
+}
+.box div.active {
+	background-color: rgba(255, 255, 255, .6);
+	border: 1px solid rgba(255, 255, 255, .8);
+}
+.box div.hover.active {
+	background-color: rgba(255, 255, 255, .8);
+	border: 1px solid rgba(255, 255, 255, .8);
+}
+.select {
+	position: absolute;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, .1);
+	border: 1px solid rgba(0, 0, 0, .1);
+}
